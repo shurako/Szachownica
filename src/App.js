@@ -22,12 +22,16 @@ function App() {
     fillArray(25);
     return squares.map((item) => <Square />);
   };
+
+
   //
   useEffect(() => {
     fillArray();
     setContainerSize([window.innerHeight, window.innerWidth]);
   }, []);
 
+
+ //
   useEffect(() => {
     const handleResize = () => {
       setContainerSize([window.innerHeight, window.innerWidth]);
@@ -36,6 +40,9 @@ function App() {
     window.onresize = handleResize;
   });
 
+  // STYLES ************************************************************************************************
+
+    // RETURNS STYLE DEPENDING ON ORIENTATION
   const containerStyle = () => {
     if (window.innerWidth > window.innerHeight) {
       return {
@@ -48,11 +55,6 @@ function App() {
         width: "100%",
       };
   };
-
-  // const containerStyle = {
-  //   width: containerSize[0],
-  //   height: '100%'
-  // }
 
   return (
     <div className="app">
