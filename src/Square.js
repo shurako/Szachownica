@@ -19,7 +19,7 @@ function Square() {
 
     return (
         <div style = {squareStyle} className="square" >
-            <FontAwesomeIcon style = {{fontSize: '2.5em'}} icon={faCoffee} />
+            <FontAwesomeIcon style = {{fontSize: '2em'}} icon={faCoffee} />
             <p>Tekst</p>
         </div>
     )
