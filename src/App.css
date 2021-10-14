@@ -19,38 +19,20 @@
   border: 1px solid black;
   margin: 5px;
 }
+.icon{
+  font-size: 2rem;
+}
 
 .square:nth-of-type(even) {
   background-color: black;
   color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 600px) {
+  .sqaure{
+    font-size: 0.5rem
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .icon{
+    font-size: 1rem;
   }
 }
