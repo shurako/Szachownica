@@ -14,6 +14,11 @@ function App() {
     }
   };
 
+// Rendering squares
+  const renderSqaures = () => {
+    fillArray(25);
+    return squares.map((item) => <Square />);
+  };
 
 
   useEffect(() => {
@@ -24,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <div className="container" >
-        <Square/>
+        {renderSqaures()}
       </div>
     </div>
   
